@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "2",
+      "name": "Teja",
+      "email": "teja@gmail.com",
+      "password": "123456"
+    }
+  ],
+
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "Spice Garden",
+      "location": "Hyderabad",
+      "cuisine": "Indian",
+      "rating": 4.8,
+      "price": 800,
+      "timing": "10 AM - 11 PM",
+      "speciality": "Hyderabadi Biryani",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+      "description": "Authentic Indian restaurant serving delicious biryani and curries."
+    },
+    {
+      "id": "2",
+      "name": "Pizza Hub",
+      "location": "Bangalore",
+      "cuisine": "Italian",
+      "rating": 4.6,
+      "price": 1200,
+      "timing": "11 AM - 12 AM",
+      "speciality": "Wood Fired Pizza",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591",
+      "description": "Popular Italian restaurant known for pizzas and pasta."
+    },
+    {
+      "id": "3",
+      "name": "Dragon Bowl",
+      "location": "Chennai",
+      "cuisine": "Chinese",
+      "rating": 4.5,
+      "price": 900,
+      "timing": "11 AM - 10 PM",
+      "speciality": "Schezwan Noodles",
+      "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624",
+      "description": "Best Chinese cuisine with authentic flavors."
+    },
+    {
+      "id": "4",
+      "name": "Burger Point",
+      "location": "Mumbai",
+      "cuisine": "American",
+      "rating": 4.4,
+      "price": 700,
+      "timing": "9 AM - 11 PM",
+      "speciality": "Double Cheese Burger",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd",
+      "description": "Juicy burgers, fries and shakes."
+    },
+    {
+      "id": "5",
+      "name": "Tandoori Flames",
+      "location": "Delhi",
+      "cuisine": "Indian",
+      "rating": 4.9,
+      "price": 1500,
+      "timing": "12 PM - 11 PM",
+      "speciality": "Butter Chicken",
+      "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe",
+      "description": "Premium North Indian dining experience."
+    },
+    {
+      "id": "6",
+      "name": "Pasta Palace",
+      "location": "Pune",
+      "cuisine": "Italian",
+      "rating": 4.7,
+      "price": 1100,
+      "timing": "11 AM - 10 PM",
+      "speciality": "Creamy Alfredo Pasta",
+      "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9",
+      "description": "Fresh handmade pasta and Italian dishes."
+    },
+    {
+      "id": "7",
+      "name": "Sushi House",
+      "location": "Bangalore",
+      "cuisine": "Japanese",
+      "rating": 4.8,
+      "price": 1800,
+      "timing": "12 PM - 10 PM",
+      "speciality": "Salmon Sushi",
+      "image": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c",
+      "description": "Authentic Japanese sushi and ramen."
+    },
+    {
+      "id": "8",
+      "name": "Taco Fiesta",
+      "location": "Hyderabad",
+      "cuisine": "Mexican",
+      "rating": 4.3,
+      "price": 850,
+      "timing": "10 AM - 10 PM",
+      "speciality": "Chicken Tacos",
+      "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85",
+      "description": "Mexican street food and tacos."
+    },
+    {
+      "id": "9",
+      "name": "Arabian Nights",
+      "location": "Kochi",
+      "cuisine": "Arabic",
+      "rating": 4.7,
+      "price": 1300,
+      "timing": "12 PM - 12 AM",
+      "speciality": "Mandi",
+      "image": "https://images.unsplash.com/photo-1544025162-d76694265947",
+      "description": "Middle Eastern cuisine and grilled dishes."
+    },
+    {
+      "id": "10",
+      "name": "Cafe Delight",
+      "location": "Visakhapatnam",
+      "cuisine": "Cafe",
+      "rating": 4.2,
+      "price": 600,
+      "timing": "8 AM - 10 PM",
+      "speciality": "Cold Coffee",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+      "description": "Cozy cafe with coffee and snacks."
+    },
+    {
+      "id": "11",
+      "name": "BBQ Nation",
+      "location": "Hyderabad",
+      "cuisine": "Barbecue",
+      "rating": 4.8,
+      "price": 1600,
+      "timing": "12 PM - 11 PM",
+      "speciality": "Live Grill Buffet",
+      "image": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd",
+      "description": "Unlimited buffet and barbecue experience."
+    },
+    {
+      "id": "12",
+      "name": "South Spice",
+      "location": "Chennai",
+      "cuisine": "South Indian",
+      "rating": 4.6,
+      "price": 500,
+      "timing": "7 AM - 10 PM",
+      "speciality": "Masala Dosa",
+      "image": "https://images.unsplash.com/photo-1630383249896-424e482df921",
+      "description": "Traditional South Indian delicacies."
+    },
+    {
+      "id": "13",
+      "name": "Royal Mughlai",
+      "location": "Lucknow",
+      "cuisine": "Mughlai",
+      "rating": 4.9,
+      "price": 1700,
+      "timing": "12 PM - 11 PM",
+      "speciality": "Galouti Kebab",
+      "image": "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398",
+      "description": "Royal Mughlai cuisine and kebabs."
+    },
+    {
+      "id": "14",
+      "name": "Green Bowl",
+      "location": "Pune",
+      "cuisine": "Healthy",
+      "rating": 4.4,
+      "price": 750,
+      "timing": "9 AM - 9 PM",
+      "speciality": "Protein Salad",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd",
+      "description": "Healthy salads and diet meals."
+    },
+    {
+      "id": "15",
+      "name": "Sea Food Bay",
+      "location": "Goa",
+      "cuisine": "Seafood",
+      "rating": 4.8,
+      "price": 1900,
+      "timing": "12 PM - 11 PM",
+      "speciality": "Grilled Lobster",
+      "image": "https://images.unsplash.com/photo-1559847844-5315695dadae",
+      "description": "Fresh seafood with coastal flavors."
+    }
+  ]
+}
