@@ -1,108 +1,68 @@
-import {
-  useDispatch,
-  useSelector
-} from "react-redux";
+import { useState } from "react";
+import api from "../services/api";
+import { useNavigate } from "react-router-dom";
 
-import {
-  removeFavorite
-} from "../features/favoriteSlice";
+function Register() {
+  const navigate =
+    useNavigate();
 
-function Favorites() {
+  const [user, setUser] =
+    useState({
+      name: "",
+      email: "",
+      password: ""
+    });
 
-  const dispatch =
-    useDispatch();
+  function handleChange(e) {
+    setUser({
+      ...user,
+      [e.target.name]:
+        e.target.value
+    });
+  }
 
-  const favorites =
-    useSelector(
-      state => state.favorites
-    );
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    await api.post("/users", user);
+
+    navigate("/login");
+  }
 
   return (
-    <div className="favorites-container">
+    <div className="auth-container">
+      <div className="auth-card">
+        <h1>Register</h1>
 
-      <h1 className="page-title">
-        Favorite Restaurants
-      </h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            onChange={handleChange}
+          />
 
-      {
-        favorites.length === 0 ? (
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            onChange={handleChange}
+          />
 
-          <div className="empty-favorites">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            onChange={handleChange}
+          />
 
-            <h2>
-              No Favorite Restaurants
-            </h2>
-
-            <p>
-              Add restaurants from
-              Restaurants page.
-            </p>
-
-          </div>
-
-        ) : (
-
-          <div className="favorites-grid">
-
-            {
-              favorites.map(
-                restaurant => (
-
-                  <div
-                    key={restaurant.id}
-                    className="favorite-card"
-                  >
-
-                    <img
-                      src={restaurant.image}
-                      alt={restaurant.name}
-                    />
-
-                    <div className="favorite-content">
-
-                      <h2>
-                        {restaurant.name}
-                      </h2>
-
-                      <p>
-                        📍 {restaurant.location}
-                      </p>
-
-                      <p>
-                        🍽 {restaurant.cuisine}
-                      </p>
-
-                      <p>
-                        ⭐ {restaurant.rating}
-                      </p>
-
-                      <button
-                        onClick={() =>
-                          dispatch(
-                            removeFavorite(
-                              restaurant.id
-                            )
-                          )
-                        }
-                      >
-                        Remove
-                      </button>
-
-                    </div>
-
-                  </div>
-
-                )
-              )
-            }
-
-          </div>
-
-        )
-      }
-
+          <button className="submit-btn">
+            Register
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
 
-export default Favorites;
+export default Register;
